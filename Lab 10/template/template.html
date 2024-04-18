@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<title>{{ title }}</title>
+<h1>{{ title }}</h1>
+<p>Here are the poems</p>
+<ul>
+    {% for item in items %}
+        <li>
+            <p>{{ item[1] }}, {{ item[2] }}</p>
+            <p>{{ item[3] }}</p>
+        </li>
+    {% endfor %}
